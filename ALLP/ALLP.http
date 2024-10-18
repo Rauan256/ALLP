@@ -1,0 +1,6 @@
+@ALLP_HostAddress = http://localhost:5239
+
+GET {{ALLP_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
