@@ -1,4 +1,4 @@
-namespace Application.DTOs;
+namespace Internship.Products.Application.DTOs;
 
 public class ProductDto
 {

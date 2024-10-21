@@ -1,4 +1,4 @@
-namespace Domain.Entities;
+namespace Internship.Products.Domain.Entities;
 
 public class Product
 {

@@ -1,7 +1,7 @@
-using Domain.Entities;
+using Internship.Products.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.DbContext;
+namespace Internship.Products.Infrastructure.DbContext;
 
 public class ApplicationDbContext : Microsoft.EntityFrameworkCore.DbContext
 {

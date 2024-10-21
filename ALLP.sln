@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALLP", "ALLP\ALLP.csproj", "{DF40C857-ED83-4BA1-98D1-54EEFB5BC6BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Internship.Products.Domain", "Internship.Products.Domain\Internship.Products.Domain.csproj", "{A65BD368-0512-4F29-9004-82CFD2DD8D48}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{A65BD368-0512-4F29-9004-82CFD2DD8D48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Internship.Products.Application", "Internship.Products.Application\Internship.Products.Application.csproj", "{47F9CADF-CCAB-4AC2-BB22-93E314E80E08}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{47F9CADF-CCAB-4AC2-BB22-93E314E80E08}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{2ADA8438-9628-42C8-9E0C-762B700ABFFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Internship.Products.Infrastructure", "Internship.Products.Infrastructure\Internship.Products.Infrastructure.csproj", "{2ADA8438-9628-42C8-9E0C-762B700ABFFB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot1", "Ocelot1\Ocelot1.csproj", "{E62AD7A1-1E0C-4BD7-851C-4FF4FE3A6FC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentation\Presentation.csproj", "{842783EC-79FA-4070-A6EE-4B4BCAFB7BA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internship.Products.Presentation", "Internship.Products.Presentation\Internship.Products.Presentation.csproj", "{842783EC-79FA-4070-A6EE-4B4BCAFB7BA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internship.Products", "Internship.Products", "{4507FDE2-5161-4C66-A8F8-ECE701B442F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{82988DDA-2310-44DC-B31C-8DCEFEF1653D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DF40C857-ED83-4BA1-98D1-54EEFB5BC6BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF40C857-ED83-4BA1-98D1-54EEFB5BC6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF40C857-ED83-4BA1-98D1-54EEFB5BC6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF40C857-ED83-4BA1-98D1-54EEFB5BC6BE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A65BD368-0512-4F29-9004-82CFD2DD8D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A65BD368-0512-4F29-9004-82CFD2DD8D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A65BD368-0512-4F29-9004-82CFD2DD8D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,5 +49,12 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {57600696-88B5-476E-BBC1-93AB669B90E4}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47F9CADF-CCAB-4AC2-BB22-93E314E80E08} = {4507FDE2-5161-4C66-A8F8-ECE701B442F8}
+		{A65BD368-0512-4F29-9004-82CFD2DD8D48} = {4507FDE2-5161-4C66-A8F8-ECE701B442F8}
+		{2ADA8438-9628-42C8-9E0C-762B700ABFFB} = {4507FDE2-5161-4C66-A8F8-ECE701B442F8}
+		{842783EC-79FA-4070-A6EE-4B4BCAFB7BA2} = {4507FDE2-5161-4C66-A8F8-ECE701B442F8}
+		{E62AD7A1-1E0C-4BD7-851C-4FF4FE3A6FC6} = {82988DDA-2310-44DC-B31C-8DCEFEF1653D}
 	EndGlobalSection
 EndGlobal

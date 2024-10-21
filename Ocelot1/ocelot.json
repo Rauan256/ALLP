@@ -1,17 +1,17 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:7263"
+    "BaseUrl": "http://localhost:5180"
   },
   "Routes": [
     {
       "UpstreamPathTemplate": "/Products",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/Products",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": "7173"
+          "Port": "5024"
         }
       ]
 
@@ -20,11 +20,11 @@
       "UpstreamPathTemplate": "/Products/{id}",
       "UpstreamHttpMethod": [ "Get","Delete","Put" ],
       "DownstreamPathTemplate": "/api/Products/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": "7173"
+          "Port": "5024"
         }
       ]
 
@@ -33,11 +33,11 @@
       "UpstreamPathTemplate": "/Products",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/Products",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": "7173"
+          "Port": "5024"
         }
       ]
 

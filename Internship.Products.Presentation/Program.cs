@@ -1,11 +1,13 @@
-using Application.Interfaces;
-using Application.Services;
-using Domain.Interfaces;
-using Infrastructure.DbContext;
-using Infrastructure.Repositories;
+using Internship.Products.Application;
+using Internship.Products.Application.Interfaces;
+using Internship.Products.Application.Services;
+using Internship.Products.Domain.Interfaces;
+using Internship.Products.Infrastructure.DbContext;
+using Internship.Products.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +22,8 @@ builder.Services.AddOcelot();
 builder.Services.AddControllers();
 
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+
 
 var app = builder.Build();
 

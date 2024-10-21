@@ -1,10 +1,8 @@
-﻿using Application.DTOs;
-using Application.Interfaces;
+﻿using Internship.Products.Application.DTOs;
+using Internship.Products.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace Presentation.Controllers
+namespace Internship.Products.Presentation.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -16,6 +14,8 @@ namespace Presentation.Controllers
         {
             _productService = productService;
         }
+        
+        
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {
@@ -23,6 +23,7 @@ namespace Presentation.Controllers
             return Ok(products);
         }
 
+        
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProductById(int id)
         {
@@ -31,16 +32,17 @@ namespace Presentation.Controllers
             {
                 return NotFound();
             }
-
             return Ok(product);
         }
+        
         [HttpPost]
         public async Task<IActionResult> AddProduct(ProductDto productDto)
         {
             await _productService.AddProductAsync(productDto);
             return CreatedAtAction(nameof(GetProductById), new { id = productDto.Id }, productDto);
         }
-
+        
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateProduct(int id, ProductDto productDto)
         {

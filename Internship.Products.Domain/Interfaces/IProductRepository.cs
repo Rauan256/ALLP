@@ -1,13 +1,6 @@
-﻿using System;  
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain.Entities;
+﻿using Internship.Products.Domain.Entities;
 
-
-
-namespace Domain.Interfaces
+namespace Internship.Products.Domain.Interfaces
 {
     public interface IProductRepository
     {

@@ -1,10 +1,9 @@
-using Domain.Entities;
-
-using Infrastructure.DbContext;
-using Domain.Interfaces;
+using Internship.Products.Domain.Entities;
+using Internship.Products.Domain.Interfaces;
+using Internship.Products.Infrastructure.DbContext;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Repositories;
+namespace Internship.Products.Infrastructure.Repositories;
 
 public class ProductRepository : IProductRepository
 {
